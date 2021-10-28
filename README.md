@@ -40,6 +40,17 @@ The options are the following:
 |ENG|English| |
 |CAT|Catalan||
 
+### Special commands
+
+The class specifies some commands to make math typing easier.
+
+#### Command for Roman numbers
+The following command that outputs the desired roman number.
+```
+\rom{NUMBER}
+
+```
+
 ## Fancynotes template
 
 This template has the main settings for the Fancynotes class to work. There are some commented items, that you can set to your preferences.
