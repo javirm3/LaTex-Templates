@@ -49,7 +49,7 @@
 \pagestyle{fancy}
 \fancyhf{}
 \chead{\leftmark}
-\rhead{Javier Rodríguez Martínez}
+\rhead{<YOUR NAME>}
 \fancyfoot[C]{\thepage}
 
 \RequirePackage{enumitem}
