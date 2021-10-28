@@ -26,7 +26,7 @@ $$a^2+b^2=c^2$$
 ```
 
 Outputs the following:
- ![alt text](../../theo2.png)
+ ![alt text](/Resources/theo2.png)
 
 ### Class Options
 
