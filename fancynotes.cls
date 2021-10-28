@@ -65,28 +65,7 @@
 \DeclareOption{CAT}{\newcommand{\babelLanguage}{catalan}}
 \ProcessOptions\relax
 \RequirePackage[\babelLanguage]{babel}
-%\newif\if@captions %\@captionsfalse
-%\DeclareOption{hyperref}{\@captionstrue}
-%\if@captions
-%	\RequirePackage[font={footnotesize,it}]{caption}
-%	\RequirePackage[labelfont={bf}]{caption}
-%	\setlength{\abovecaptionskip}{1pt}
-%	\setlength{\belowcaptionskip}{1pt}
-%\fi
-
-%\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
-%\renewcommand{\cftdot}{.}
-%\addto\captionsenglish{\renewcommand{\contentsname}{Index}}
-%\newlength{\savetextdim}
-%
-%\newcommand{\babelLanguage}{english}
-%\DeclareOption{english}{\renewcommand{\babelLanguage}{english}}
-%\DeclareOption{spanish}{\renewcommand{\babelLanguage}{spanish}}
-%\DeclareOption{catalan}{\renewcommand{\babelLanguage}{catalan}}
-%\ProcessOptions\relax
-%\RequirePackage[\babelLanguage]{babel}
-%
-
+s
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%THEOREM'S FRAME%%%%%%%%%%%
