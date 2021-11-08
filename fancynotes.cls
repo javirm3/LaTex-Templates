@@ -49,7 +49,7 @@
 \pagestyle{fancy}
 \fancyhf{}
 \chead{\leftmark}
-\rhead{<YOUR NAME>}
+\rhead{Javier Rodríguez Martínez}
 \fancyfoot[C]{\thepage}
 
 \RequirePackage{enumitem}
@@ -65,7 +65,28 @@
 \DeclareOption{CAT}{\newcommand{\babelLanguage}{catalan}}
 \ProcessOptions\relax
 \RequirePackage[\babelLanguage]{babel}
-s
+%\newif\if@captions %\@captionsfalse
+%\DeclareOption{hyperref}{\@captionstrue}
+%\if@captions
+%	\RequirePackage[font={footnotesize,it}]{caption}
+%	\RequirePackage[labelfont={bf}]{caption}
+%	\setlength{\abovecaptionskip}{1pt}
+%	\setlength{\belowcaptionskip}{1pt}
+%\fi
+
+%\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+%\renewcommand{\cftdot}{.}
+%\addto\captionsenglish{\renewcommand{\contentsname}{Index}}
+%\newlength{\savetextdim}
+%
+%\newcommand{\babelLanguage}{english}
+%\DeclareOption{english}{\renewcommand{\babelLanguage}{english}}
+%\DeclareOption{spanish}{\renewcommand{\babelLanguage}{spanish}}
+%\DeclareOption{catalan}{\renewcommand{\babelLanguage}{catalan}}
+%\ProcessOptions\relax
+%\RequirePackage[\babelLanguage]{babel}
+%
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%THEOREM'S FRAME%%%%%%%%%%%
@@ -82,7 +103,7 @@ s
 \ifstrempty{#1}%
 {\mdfsetup{%
 frametitle={%
-\tikz[baseline=(current bounding box.east),outer sep=0pt]
+\tikz[baseline=(current bounding box.east),outer sep=1pt]
 \node[anchor=east,rectangle,fill=blue!20]
 {\strut Theorem~\thetheo};}}
 }%
@@ -95,6 +116,7 @@ frametitle={%
 \mdfsetup{innertopmargin=10pt,linecolor=blue!20,%
 linewidth=2pt,topline=true,%
 frametitleaboveskip=\dimexpr-\ht\strutbox\relax
+skipabove=\baselineskip,aftersingleframe=\bigskip,afterlastframe=\bigskip
 }
 \begin{mdframed}[]\relax%
 \label{#2}}{\end{mdframed}}
@@ -120,6 +142,7 @@ frametitle={%
 \mdfsetup{innertopmargin=10pt,linecolor=yellow!70,%
 linewidth=2pt,topline=true,%
 frametitleaboveskip=\dimexpr-\ht\strutbox\relax
+skipabove=\baselineskip,aftersingleframe=\bigskip,afterlastframe=\bigskip
 }
 \begin{mdframed}[]\relax%
 \label{#2#1}}{\end{mdframed}}
@@ -145,7 +168,7 @@ frametitle={%
 \mdfsetup{innertopmargin=10pt,linecolor=red!20,%
 linewidth=2pt,topline=true,%
 frametitleaboveskip=\dimexpr-\ht\strutbox\relax
-}
+skipabove=\baselineskip,aftersingleframe=\bigskip,afterlastframe=\bigskip}
 \begin{mdframed}[]\relax%
 \label{#2}}{\qed\end{mdframed}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
